@@ -142,6 +142,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 
+  background-color: var(--accent-color);
   background-image: url(./images/hero.jpg);
   background-repeat: no-repeat;
   background-position: top -70px right 0;
