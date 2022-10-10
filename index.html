@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guest house</title>
     <link rel="stylesheet" href="style.css">
     <!-- https://www.figma.com/file/oej9kmE2wxIh17QR8acurM/Guest-House-%2B?node-id=1%3A2 -->
 </head>
@@ -14,7 +14,7 @@
         <div class="container">
             <nav class="header-nav">
             <a class="logo link" href="./index.html">
-                <img src="./images/logo.png" alt="logo">
+                <img class="header__logo" src="./images/logo.png" alt="logo">
             </a>
             <ul class="header-nav__list list">
                 <li class="header-nav__item"><a class="header-nav__link link current" href="#">Start</a></li>
@@ -108,41 +108,21 @@
 
                     <li class="privilege__item">
                         <svg class="privilege-icon" width="36" height="36">
-                            <use href="./images/icons.svg#icon-trees-icon"></use>
-                        </svg>
-                        <div class="privilege__item-container">
-                            <p class="privilege__item-text">Outdoor Paths</p>
-                            <p class="privilege__item-text privilege__item-text--dark">Nulla rhoncus feugiat eros quis consectetur.</p>
-                        </div>
-                    </li>
-
-                    <li class="privilege__item">
-                        <svg class="privilege-icon" width="36" height="36">
-                            <use href="./images/icons.svg#icon-shape-icon"></use>
-                        </svg>
-                        <div class="privilege__item-container">
-                            <p class="privilege__item-text">Coffee Maker</p>
-                            <p class="privilege__item-text privilege__item-text--dark">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
-                        </div>
-                    </li>
-
-                    <li class="privilege__item">
-                        <svg class="privilege-icon" width="36" height="36">
-                            <use href="./images/icons.svg#icon-forest-icon"></use>
-                        </svg>
-                        <div class="privilege__item-container">
-                            <p class="privilege__item-text">Natural Scenery</p>
-                            <p class="privilege__item-text privilege__item-text--dark">Cras commodo consequat orci, in convallis risus egestas non.</p>
-                        </div>
-                    </li>
-
-                    <li class="privilege__item">
-                        <svg class="privilege-icon" width="36" height="36">
                             <use href="./images/icons.svg#icon-air-conditioner-icon"></use>
                         </svg>
                         <div class="privilege__item-container">
                             <p class="privilege__item-text">Air Conditioner</p>
                             <p class="privilege__item-text privilege__item-text--dark">Nullam scelerisque aliquam odio et faucibus.</p>
+                        </div>
+                    </li>
+
+                    <li class="privilege__item">
+                        <svg class="privilege-icon" width="36" height="36">
+                            <use href="./images/icons.svg#icon-trees-icon"></use>
+                        </svg>
+                        <div class="privilege__item-container">
+                            <p class="privilege__item-text">Outdoor Paths</p>
+                            <p class="privilege__item-text privilege__item-text--dark">Nulla rhoncus feugiat eros quis consectetur.</p>
                         </div>
                     </li>
 
@@ -158,11 +138,33 @@
 
                     <li class="privilege__item">
                         <svg class="privilege-icon" width="36" height="36">
+                            <use href="./images/icons.svg#icon-shape-icon"></use>
+                        </svg>
+                        <div class="privilege__item-container">
+                            <p class="privilege__item-text">Coffee Maker</p>
+                            <p class="privilege__item-text privilege__item-text--dark">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+                        </div>
+                    </li>
+
+                    
+
+                    <li class="privilege__item">
+                        <svg class="privilege-icon" width="36" height="36">
                             <use href="./images/icons.svg#icon-glass-icon"></use>
                         </svg>
                         <div class="privilege__item-container">
                             <p class="privilege__item-text">Cutlery Selection</p>
                             <p class="privilege__item-text privilege__item-text--dark">Duis tristique sed lorem a vestibulum.</p>
+                        </div>
+                    </li>
+
+                    <li class="privilege__item">
+                        <svg class="privilege-icon" width="36" height="36">
+                            <use href="./images/icons.svg#icon-forest-icon"></use>
+                        </svg>
+                        <div class="privilege__item-container">
+                            <p class="privilege__item-text">Natural Scenery</p>
+                            <p class="privilege__item-text privilege__item-text--dark">Cras commodo consequat orci, in convallis risus egestas non.</p>
                         </div>
                     </li>
 
@@ -289,7 +291,7 @@
                         <svg class="slogan-icon" width="36" height="36">
                             <use href="./images/icons.svg#icon-bread-icon"></use>
                         </svg>
-                        <p class="slogan__item-text slogan__item-text--big">Nullam scelerisque aliquam odio et faucibus.</p>
+                        <p class="slogan__item-text">Nullam scelerisque aliquam odio et faucibus.</p>
                     </li> 
 
                     <li class="slogan__item">
@@ -309,7 +311,115 @@
             </div>
         </section>
 
-
+        <section class="banner">
+            <div class="container">
+                <h2 class="banner__title">We're already booked up for the spring — hurry up & secure your stay for the summer.</h2>
+                <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
+                <div class="banner_btns">
+                    <button type="button" class="contact__btn contact__btn--light">Contact</button>
+                    <button type="button" class="contact__btn contact__btn--dark">Book now</button>
+                </div>
+            </div>
+        </section>   
 </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__flex">
+            <div class="footer__pages">
+                <p class="footer__box">Pages</p>
+                <ul class="footer__pages-list list">
+                    <li class="footer__page-item">
+                        <a class="footer__page-link link" href="#">Start</a>
+                    </li>
+                    <li class="footer__page-item">
+                        <a class="footer__page-link link" href="#">Contact</a>
+                    </li>
+                    <li class="footer__page-item">
+                        <a class="footer__page-link link" href="#">Our history</a>
+                    </li>
+                    <li class="footer__page-item">
+                        <a class="footer__page-link link" href="#">Licenses</a>
+                    </li>
+                    <li class="footer__page-item">
+                        <a class="footer__page-link link" href="#">Instructions</a>
+                    </li>
+                    <li class="footer__page-item">
+                        <a class="footer__page-link link" href="#">Style guide</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <p class="footer__box">Social Media</p>
+                <ul class="footer__social-list list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link link" href="https://www.airbnb.com.ua/poland/stays">
+                            <svg class="footer-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-airbnb-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link link" href="https://facebook.com/">
+                            <svg class="footer-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-facebook-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link link" href="https://www.instagram.com/">
+                            <svg class="footer-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__submit">
+                <p class="footer__box">Newsletter</p>
+                <p class="footer__submit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <div class="footer__submit-form">
+                    <label class="footer__submit-label" for="submit-mail"></label>
+                    <input class="footer__submit-input" type="email" name="submit-mail" id="submit-mail" placeholder="Email">
+                    <button class="footer__submit-btn" type="submit">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+        <img src="./images/logo.png" alt="logo" class="footer__logo">  
+
+        <p class="footer__text">
+            &copy Guest House, LLC. All rights reserved. Powered by <a class="footer__text-link link" href="#">Webflow</a>
+        </p>
+        <ul class="footer__contacts-list list">
+            <li class="footer__contacts-item">
+                <a class="footer__contact-link link" href="tel:+470702881234"
+                >+47 (0) 702 88 12 34</a
+              >
+            </li>
+
+            <li class="footer__contacts-item">
+                <a
+                class="footer__contact-link link"
+                href="mailto:example@webflow.io"
+                >example@webflow.io</a
+              >
+            </li>
+
+            <li class="footer__contacts-item">
+                <a
+                class="footer__contact-link link"
+                href="https://goo.gl/maps/weL76iEVU4vihEQe7"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Klubbvika 12, 8310 Kabelvag, Norway</a
+              >
+            </li>
+        </ul>    
+
+    </div>
+</footer>
+
 </body>
 </html>
