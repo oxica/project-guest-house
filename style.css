@@ -458,6 +458,7 @@ ul {
   padding-bottom: 70px;
 
   background-color: var(--secondary-color);
+  overflow: hidden;
 }
 
 .reviews::before {
@@ -488,7 +489,8 @@ ul {
   width: 600px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 32px;
+  margin-bottom: 302px;
+  /* padding-bottom: 292px; */
 
   font-size: 16px;
   line-height: 1.5;
@@ -498,18 +500,35 @@ ul {
 }
 
 .reviews__list {
+  position: relative;
   display: flex;
   align-items:flex-start;
   justify-content: center;
+  transition: 2s;
 }
 
 .reviews__item {
+  position: absolute;
+  top: -268px;
+  left: 604px;
+
   min-width: 584px;
   padding: 31px;
   margin: 20px;
   border: 1px solid rgba(82, 80, 59, 0.1);
   border-radius: 4px;
   background-color: var(--white-color);
+  transition-timing-function: linear;
+
+}
+
+.reviews__item:first-child{
+  top: -268px;
+  left: 0;
+}
+.reviews__item:last-child{
+  top: -268px;
+  left: 1208px;
 }
 
 .reviews__stars {
@@ -557,11 +576,40 @@ ul {
 }
 
 .reviews-circle {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
   margin-left: 1054px;
 }
 
-.reviews-icon-circle:not(:last-child) {
+.left,
+.right{
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.left:hover,
+.right:hover,
+.left:focus,
+.right:focus{
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.right{
   margin-right: 10px;
 }
 
@@ -803,6 +851,10 @@ ul {
   fill: var(--accent-color);
 }
 
+.footer__submit{
+  position: relative;
+}
+
 .footer__submit-text {
   width: 563px;
   line-height: 1.43;
@@ -810,7 +862,6 @@ ul {
 }
 
 .footer__submit-input {
-  position: relative;
   width: 576px;
   margin: 0;
   padding: 16px 30px;
@@ -842,7 +893,7 @@ ul {
 
 .footer__submit-btn {
   position: absolute;
-  left: 76%;
+  right: 11px;
   min-height: 30px;
   margin-top: 9px;
 
