@@ -10,7 +10,6 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -583,8 +582,8 @@ ul {
   margin-left: 1054px;
 }
 
-.left,
-.right{
+.reviews__btn-left,
+.reviews__btn-right{
 
   display: block;
   width: 60px;
@@ -599,17 +598,17 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.left:hover,
-.right:hover,
-.left:focus,
-.right:focus{
+.reviews__btn-left:hover,
+.reviews__btn-right:hover,
+.reviews__btn-left:focus,
+.reviews__btn-right:focus{
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
   border-color: var(--primary-color);
   outline: none;
 }
 
-.right{
+.reviews__btn-right{
   margin-right: 10px;
 }
 

@@ -1,6 +1,6 @@
 const sliderContainer = document.querySelector('.reviews__list');
-const leftBtn = document.querySelector(".left");
-const rightBtn = document.querySelector(".right");
+const leftBtn = document.querySelector(".reviews__btn-left");
+const rightBtn = document.querySelector(".reviews__btn-right");
 const slide = document.querySelectorAll(".reviews__item");
 
 
